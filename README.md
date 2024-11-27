@@ -28,14 +28,13 @@ O código está aberto para extensão, mas fechado para modificação. Por exemp
 Liskov Substitution Principle (LSP):
 
 Embora o padrão LSP não tenha sido explicitamente necessário para esta PoC (já que não há herança envolvida), a implementação está estruturada de maneira que, caso desejássemos adicionar herança (por exemplo, para diferentes tipos de clientes ou servidores), isso poderia ser feito sem quebrar o comportamento do sistema.
-Interface Segregation Principle (ISP):
-
-As classes não têm interfaces excessivamente grandes e complexas. Cada classe tem funções focadas e bem definidas. A interface de comunicação entre o cliente e o servidor está bem delimitada: o cliente envia dados via socket e o servidor processa esses dados.
 
 Dependency Inversion Principle (DIP):
 
 A dependência do servidor de um cliente é injetada por meio de parâmetros de configuração, como o host e port. Isso permite que o servidor e o cliente sejam desacoplados, permitindo a troca de implementação de um ou outro facilmente sem afetar o sistema.
+
 Princípios de Clean Code
+
 A implementação segue também os princípios de Clean Code, que garantem que o código seja legível, compreensível e fácil de manter:
 
 Nomes Significativos:
