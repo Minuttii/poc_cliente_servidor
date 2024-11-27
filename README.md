@@ -12,8 +12,7 @@ tests/test_servidor.py: Contém os testes unitários para garantir o correto fun
 Configuração de Projeto: Arquivos como pyproject.toml e setup.py ajudam a organizar as dependências e o ambiente de desenvolvimento.
 
 Padrões de projeto:
-Singleton (para o Servidor):
-O servidor é implementado de forma que apenas uma instância dele seja criada durante a execução do programa. Esse comportamento é garantido por meio do padrão Singleton, onde o servidor é iniciado uma única vez e escuta as conexões de forma contínua.
+
 Command (Processamento de requisições):
 O servidor processa as requisições dos clientes com base no tipo de comando (por exemplo, soma). 
 Cada comando pode ser considerado uma instância de um Command, onde a ação solicitada pelo cliente é executada em uma função específica (processar_requisicao).
